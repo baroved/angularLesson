@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Symbol</th>
+        <th scope="col">CurrentPrice</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of coins">
+        <td>{{i.id}}</td>
+        <td>{{i.symbol}}</td>
+        <td>{{i.current_price}}</td>
+        <td><img height="100px" width="100px" src={{i.image}}/></td>
+      </tr>
+    
+    </tbody>
+  </table>
